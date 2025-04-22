@@ -1,86 +1,73 @@
-
 import React from 'react';
 import './index.css';
 
 function App() {
   return (
-    <div className="bg-gray-50 min-h-screen text-gray-800 font-sans">
-      <div className="max-w-4xl mx-auto px-6 py-12 space-y-14">
-        <header className="text-center">
-          <h1 className="text-5xl font-extrabold text-purple-800">LipoMelt</h1>
-          <p className="mt-4 text-lg text-gray-600">Naturally Target Lipomas in 30 Days</p>
-        </header>
+    <div className="max-w-3xl mx-auto p-6 space-y-6">
+      <h1 className="text-3xl font-bold text-center">LipoMelt: Naturally Target Lipomas in 30 Days</h1>
 
-        <section className="bg-white p-6 rounded-2xl shadow-xl space-y-4">
-          <h2 className="text-2xl font-semibold text-purple-700 mb-4">📅 30-Day Protocol Overview</h2>
-          <ul className="list-decimal pl-6 space-y-2 text-gray-700 text-left">
-            <li>🌞 Morning: Take Bitter Melon + L-Carnitine</li>
-            <li>🥗 Eat anti-inflammatory meals: turmeric, leafy greens, no dairy/sugar</li>
-            <li>💧 Stay hydrated: 2+ liters of water/day</li>
-            <li>💊 Midday: Take NMN + CoQ10 stack</li>
-            <li>🌿 Apply castor oil pack to affected area (20 mins)</li>
-            <li>🔦 Use red light therapy device (10 mins)</li>
-            <li>🌙 Evening: Take liposomal curcumin + magnesium</li>
-            <li>🛌 Gentle stretching or infrared sauna (if available)</li>
-            <li>📝 Track changes in journal or checklist</li>
-            <li>🔁 Repeat daily for 30 days</li>
-          </ul>
-        </section>
+      <section className="bg-white rounded-xl shadow-md p-6">
+        <h2 className="text-xl font-semibold mb-2">📋 30-Day Protocol Overview</h2>
+        <ol className="list-decimal ml-5 space-y-2 text-sm">
+          <li>🌞 Morning: Apply topical castor oil compress, take L-Carnitine & NMN+CoQ10+PQQ stack</li>
+          <li>🍴 Meal Timing: Eat within a 10-hour window. Include turmeric and bitter melon extract</li>
+          <li>🔴 Midday: 10-15 mins of red light therapy on lipoma area</li>
+          <li>💧 Hydration: Drink 2+ liters water, avoid sugary drinks</li>
+          <li>🌙 Evening: Magnesium-rich meal, take curcumin supplement, stretch lightly</li>
+          <li>🛌 Weekly: Track changes using checklist & reapply castor pack 4x/week</li>
+        </ol>
+      </section>
 
-        <section className="bg-gradient-to-br from-purple-100 to-purple-50 p-6 rounded-2xl shadow space-y-4 text-center">
-          <h2 className="text-2xl font-semibold text-purple-700">🎁 Get the Full Free Protocol</h2>
-          <p>Enter your email to receive the full PDF guide, tracker sheet, and calendar reminders.</p>
-          <div dangerouslySetInnerHTML={ __html: `
-<form action="https://app.kit.com/forms/7946917/subscriptions" method="post">
-  <input type="email" name="email_address" placeholder="Email Address" required class="border p-2 rounded w-full" />
-  <button type="submit" class="mt-2 bg-pink-400 text-white font-bold py-2 px-4 rounded">Send me the guide</button>
-</form>
-` } />
-        </section>
+      <section className="bg-white rounded-xl shadow-md p-6">
+        <h2 className="text-xl font-semibold">🎁 Get the Full Free Protocol</h2>
+        <p>Enter your email to receive the full PDF guide, tracker sheet, and calendar reminders.</p>
+        <div>
+          <script async data-uid="3f044018ce" src="https://lipo-melt-protocol.kit.com/3f044018ce/index.js"></script>
+        </div>
+      </section>
 
-        <section className="bg-white p-6 rounded-2xl shadow-xl text-center">
-          <img src="/images/lipoma.jpg" alt="Untreated lipoma on arm" className="mx-auto rounded-xl shadow-lg w-full max-w-xs" />
-          <p className="mt-4 text-sm text-gray-500 italic">
-            Lipomas left untreated can continue to grow. This can cause pain by putting pressure on ligaments, muscles, and nerves.
-          </p>
-        </section>
+      <section className="bg-white rounded-xl shadow-md p-6 space-y-4">
+        <img src="/images/lipoma.jpg" alt="Untreated lipoma on arm" className="rounded-xl w-1/4 object-cover mx-auto" />
+        <p className="text-sm italic text-gray-600 text-center">
+          Lipomas left untreated can continue to grow. This can cause pain by putting pressure on ligaments, muscles, and nerves.
+        </p>
+      </section>
 
-        <section className="bg-white p-6 rounded-2xl shadow-xl">
-          <h2 className="text-2xl font-semibold text-purple-700 mb-4">🧪 Recommended Products</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center">
-            <div>
-              <img src="/images/curcumin.jpg" className="h-24 mx-auto mb-2" alt="Curcumin" />
-              <p className="text-blue-600 underline">Liposomal Curcumin</p>
-            </div>
-            <div>
-              <img src="/images/nmn.jpg" className="h-24 mx-auto mb-2" alt="NMN" />
-              <p className="text-blue-600 underline">NMN + CoQ10 + PQQ</p>
-            </div>
-            <div>
-              <img src="/images/redlight.jpg" className="h-24 mx-auto mb-2" alt="Red Light" />
-              <p className="text-blue-600 underline">Red Light Therapy</p>
-            </div>
-            <div>
-              <img src="/images/castoroil.jpg" className="h-24 mx-auto mb-2" alt="Castor Oil" />
-              <p className="text-blue-600 underline">Castor Oil Pack</p>
-            </div>
-            <div>
-              <img src="/images/bittermelon.jpg" className="h-24 mx-auto mb-2" alt="Bitter Melon" />
-              <p className="text-blue-600 underline">Bitter Melon</p>
-            </div>
-            <div>
-              <img src="/images/lcarnitine.jpg" className="h-24 mx-auto mb-2" alt="L-Carnitine" />
-              <p className="text-blue-600 underline">L-Carnitine</p>
-            </div>
-          </div>
-        </section>
+      <section className="bg-white rounded-xl shadow-md p-6">
+        <h2 className="text-xl font-semibold mb-2">🧴 Recommended Products</h2>
+        <ul className="space-y-2 text-blue-600 underline text-sm">
+          <li>
+            <img src="https://i.imgur.com/L4F7p5T.jpg" alt="Curcumin" className="w-12 inline mr-2" />
+            <a href="https://amzn.to/3XYZCurcumin" target="_blank" rel="noopener noreferrer">Liposomal Curcumin with Piperine</a>
+          </li>
+          <li>
+            <img src="https://i.imgur.com/gRorD4e.jpg" alt="NMN Stack" className="w-12 inline mr-2" />
+            <a href="https://amzn.to/3XYZNMN" target="_blank" rel="noopener noreferrer">NMN + CoQ10 + PQQ Stack</a>
+          </li>
+          <li>
+            <img src="https://i.imgur.com/o0Xv8hM.jpg" alt="Red Light Therapy" className="w-12 inline mr-2" />
+            <a href="https://amzn.to/3XYZRedLight" target="_blank" rel="noopener noreferrer">Red Light Therapy Device</a>
+          </li>
+          <li>
+            <img src="https://i.imgur.com/xohldQ3.jpg" alt="Castor Oil Pack" className="w-12 inline mr-2" />
+            <a href="https://amzn.to/3XYZCastor" target="_blank" rel="noopener noreferrer">Castor Oil Pack Kit</a>
+          </li>
+          <li>
+            <img src="https://i.imgur.com/YG6JwPG.jpg" alt="Bitter Melon" className="w-12 inline mr-2" />
+            <a href="https://amzn.to/3XYZMelon" target="_blank" rel="noopener noreferrer">Bitter Melon Extract</a>
+          </li>
+          <li>
+            <img src="https://i.imgur.com/pW6AfGR.jpg" alt="L-Carnitine" className="w-12 inline mr-2" />
+            <a href="https://amzn.to/3XYZCarnitine" target="_blank" rel="noopener noreferrer">L-Carnitine</a>
+          </li>
+        </ul>
+        <p className="text-xs mt-4 text-gray-500">Note: These are affiliate links. We may earn a small commission if you purchase through them.</p>
+      </section>
 
-        <footer className="text-center text-xs text-gray-400 border-t pt-6">
-          This content is for informational purposes only and is not medical advice. Always consult a healthcare provider before starting a new regimen.
-          <br />
-          © {new Date().getFullYear()} LipoMelt Protocol
-        </footer>
-      </div>
+      <footer className="text-xs text-center text-gray-400 pt-4">
+        <p>© 2025 LipoMelt Protocol</p>
+        <p>This content is for informational purposes only and is not medical advice. Always consult a healthcare provider before starting a new regimen.</p>
+      </footer>
     </div>
   );
 }
